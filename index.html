@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#244A43">
+  <meta name="description" content="字句漫游，纸条漂流：活动规则、主讲示范与一句话分享。">
+  <title>字句漫游，纸条漂流 · 从一句话开始认识彼此</title>
+  <style>
+    :root{--cream:#fff6e9;--green:#244a43;--orange:#d77352;--yellow:#f4d581;--blue:#bcd9db;--ink:#263e37;--muted:#64736a;--line:#d9dac9;--sans:"Microsoft YaHei","PingFang SC",sans-serif;--serif:"Songti SC","STSong","SimSun",serif;--stage:min(1500px,calc(100vw - 56px),calc((100dvh - 148px)*16/9))}
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#eeeade;color:var(--ink)}body{font-family:var(--sans);-webkit-font-smoothing:antialiased}button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}button:disabled{opacity:.28;cursor:default}button:focus-visible{outline:3px solid var(--orange);outline-offset:4px}[hidden]{display:none!important}
+    .app{min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 0 15px;gap:13px}.masthead,.toolbar{width:var(--stage);display:flex;align-items:center;justify-content:space-between}.brand{font-size:12px;letter-spacing:.1em;display:flex;gap:10px;align-items:center}.brand-mark{width:12px;height:16px;background:var(--orange);clip-path:polygon(0 0,100% 0,100% 100%,50% 75%,0 100%)}.masthead-info{font-size:11px;color:var(--muted)}.deck{width:var(--stage);aspect-ratio:16/9;container-type:inline-size;position:relative;isolation:isolate;border-radius:8px;overflow:hidden;box-shadow:0 22px 65px #244a4316,0 2px 5px #244a4310;background:var(--cream)}.slide{position:absolute;inset:0;padding:4cqw 5.5cqw;overflow:hidden;background:var(--cream);animation:arrive .38s ease both}.slide:not(.active){display:none}.slide h1,.slide h2,.slide h3,.slide p,.slide blockquote{margin:0}.slide h1,.slide h2,.slide h3,.serif{font-family:var(--serif);font-weight:600}.eyebrow{font-size:1.18cqw;letter-spacing:.15em;display:flex;gap:1cqw;align-items:center;color:var(--muted)}.section-tag{font-size:1.05cqw;letter-spacing:.08em;padding:.35cqw .75cqw;border-radius:3px;background:var(--yellow);color:var(--green)}.folio{position:absolute;right:5.4cqw;top:4cqw;font:1.65cqw Georgia,serif;color:var(--muted)}.slide h2{font-size:3.75cqw;line-height:1.45;letter-spacing:.015em;margin-top:2.2cqw}.accent{color:#b85b3d}.soft{color:var(--muted)}.body{font-size:1.8cqw;line-height:1.85}.caption{font-size:1.22cqw;line-height:1.7;color:var(--muted)}.footline{position:absolute;bottom:3.3cqw;left:5.5cqw;right:5.5cqw;font-size:1.5cqw;line-height:1.8}.footline::before{content:"";display:inline-block;vertical-align:middle;width:2.3cqw;height:2px;background:var(--orange);margin-right:1cqw}.dark{background:var(--green);color:var(--cream)}.dark .eyebrow,.dark .folio,.dark .soft{color:#c3d8c7}.dark .section-tag{color:var(--green);background:var(--yellow)}.dark .accent{color:var(--yellow)}.paper{background:#fffdf6;border:1px solid #e6dfce;border-radius:3px;box-shadow:.7cqw .9cqw 0 #244a430b;padding:2cqw 2.2cqw;position:relative;color:var(--ink)}.paper::after{content:"";position:absolute;width:7cqw;height:1.4cqw;top:-.65cqw;left:38%;background:#f4d581bd;transform:rotate(-4deg)}.label{display:inline-block;font-size:1.25cqw;line-height:1.4;padding:.35cqw .8cqw;background:var(--yellow);color:var(--green);border-radius:3px}.label.blue{background:var(--blue)}.label.outline{border:1px solid currentColor;background:transparent}.rule-number{font:1.5cqw Georgia,serif;color:#a85238}.stamp{border:2px solid currentColor;color:var(--orange);width:7cqw;height:7cqw;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.3cqw;transform:rotate(12deg);font-size:1.1cqw;letter-spacing:.1em}.stamp::after{content:"";position:absolute;inset:.45cqw;border:1px dashed currentColor;border-radius:50%}.stamp b{font-weight:500;font-size:1.5cqw}.sticker{display:inline-flex;align-items:center;justify-content:center;width:2.4cqw;height:2.4cqw;background:var(--orange);color:var(--cream);border-radius:50%;font-size:1.25cqw;box-shadow:1px 2px 0 #244a4312}.sticker.yellow{background:var(--yellow);color:var(--green)}.sticker.blue{background:var(--blue);color:var(--green)}
+    .envelope{position:relative;width:28cqw;height:17cqw;background:#edbd76;border-radius:2px;box-shadow:1cqw 1.5cqw 0 #102f2820}.envelope::before{content:"";position:absolute;inset:0;background:#e4aa65;clip-path:polygon(0 0,50% 53%,100% 0)}.envelope::after{content:"";position:absolute;inset:0;background:#f1c78e;clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);z-index:2}.envelope .letter-peek{position:absolute;left:8%;width:84%;height:20cqw;bottom:4cqw;background:var(--cream);padding:2cqw;transform:rotate(-6deg);border-radius:2px;box-shadow:0 -3px 12px #17393010;z-index:1}.letter-peek .peek-title{font-family:var(--serif);font-size:2.5cqw;line-height:1.6}.letter-peek .peek-line{display:block;width:80%;height:1px;background:#b5b9a7;margin:1.3cqw 0}.envelope .envelope-seal{position:absolute;left:44%;top:50%;z-index:3;transform:translateY(-20%) rotate(-8deg);width:4.5cqw;height:4.5cqw;border-radius:50%;background:var(--orange);color:var(--cream);display:grid;place-items:center;font-family:var(--serif);font-size:1.8cqw}.envelope .envelope-address{position:absolute;left:2cqw;bottom:1.7cqw;z-index:3;color:var(--green);font-size:1.05cqw;letter-spacing:.1em}
+    .cover{background:var(--green)}.cover .eyebrow{color:#c4d9c7}.cover-layout{display:grid;grid-template-columns:1.25fr .9fr;gap:4cqw;margin-top:5cqw;align-items:center}.cover h1{font-size:6.2cqw;line-height:1.43;color:var(--cream);letter-spacing:.045em}.cover h1 span{color:var(--yellow)}.cover .intro{font-size:1.85cqw;color:#dce7d9;margin-top:2.5cqw;line-height:1.9}.cover .visual{position:relative;padding-top:7cqw;transform:rotate(5deg)}.cover .stamp{position:absolute;right:1cqw;top:0;color:var(--yellow);z-index:4}.cover .cover-date{position:absolute;left:5.5cqw;bottom:3.3cqw;color:#cee0cd;font-size:1.25cqw;letter-spacing:.06em}.cover .corner-arrow{position:absolute;right:5.5cqw;bottom:3cqw;font-size:3.5cqw;line-height:1;color:var(--yellow)}.cover .folio{color:#bdd2c0}
+    .write-layout{display:grid;grid-template-columns:1fr 1fr;gap:5cqw;margin-top:3.2cqw;align-items:start}.writing-points{padding-top:.4cqw}.writing-point{display:grid;grid-template-columns:2.4cqw 1fr;gap:1.1cqw;padding:1.3cqw 0;border-bottom:1px solid var(--line)}.writing-point h3{font-size:2.1cqw;line-height:1.5}.writing-point p{font-size:1.5cqw;color:var(--muted);line-height:1.8;margin-top:.5cqw}.writing-point .rule-number{padding-top:.4cqw}.category-samples{display:flex;gap:.6cqw;margin-top:1.7cqw;align-items:center;flex-wrap:wrap}.category-samples .caption{font-size:1.1cqw;margin-right:.2cqw}.writing-paper{transform:rotate(1.5deg);margin-top:.8cqw;padding:2cqw 2.4cqw}.writing-paper .paper-heading{font-size:1.2cqw;color:var(--muted);padding-bottom:1cqw;border-bottom:1px solid var(--line)}.paper-slot{margin-top:1.4cqw}.paper-slot .slot-label{font-size:1.15cqw;color:#a45238;margin-bottom:.5cqw}.paper-slot .slot-main{font-family:var(--serif);font-size:2cqw;line-height:1.7}.paper-slot .slot-hint{font-size:1.4cqw;line-height:1.9;color:var(--muted)}.writing-paper .source-reminder{font-size:1.15cqw;color:var(--muted);margin-top:1.5cqw;border-top:1px dashed #c9ccb9;padding-top:1cqw}
+    .number-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:6cqw;margin-top:3.5cqw;align-items:center}.numbering-paper{transform:rotate(-3deg);height:24cqw;padding:2.3cqw;background:#fffdf5}.number-badge{display:inline-flex;gap:.7cqw;align-items:center;color:var(--green);font-size:1.3cqw;padding:.5cqw .8cqw;background:var(--blue);border:1px dashed #678a88;position:relative}.number-badge b{font:2.5cqw Georgia,serif}.numbering-paper .number-note{font-size:1.2cqw;position:absolute;top:3cqw;right:2cqw;color:var(--muted)}.numbering-paper .ghost-text{font-family:var(--serif);font-size:2.1cqw;margin-top:2.8cqw}.numbering-paper .ghost-lines{height:7cqw;margin-top:1.3cqw;background:repeating-linear-gradient(transparent,transparent 2.2cqw,#dfe1d3 2.2cqw,#dfe1d3 calc(2.2cqw + 1px))}.numbering-paper .stamp{position:absolute;bottom:1.7cqw;right:2cqw;width:5.7cqw;height:5.7cqw;font-size:.9cqw}.numbering-paper .stamp b{font-size:1.2cqw}.packing-side .envelope{width:28cqw;height:15cqw;margin:1.6cqw 0 2.2cqw}.packing-side h3{font-size:2.35cqw;line-height:1.6}.packing-side .body{font-size:1.65cqw;color:var(--muted)}.packing-arrow{font-size:2.8cqw;color:var(--orange);margin-bottom:1cqw}
+    .drift{background:#eff2e7}.drift-layout{display:grid;grid-template-columns:1fr 1fr;gap:6cqw;margin-top:3.2cqw}.drift-route{position:relative;padding-left:.4cqw}.drift-route::before{content:"";position:absolute;left:1.65cqw;top:2cqw;bottom:3.7cqw;border-left:2px dashed #99aaa0}.drift-stop{display:grid;grid-template-columns:3cqw 1fr;gap:1.4cqw;padding:.6cqw 0 2.3cqw;position:relative}.stop-dot{width:2.6cqw;height:2.6cqw;background:var(--green);color:var(--cream);border-radius:50%;font:1.25cqw/2.6cqw Georgia,serif;text-align:center}.drift-stop:nth-child(2) .stop-dot{background:var(--orange)}.drift-stop:nth-child(3) .stop-dot{background:#638b8b}.drift-stop h3{font-size:2.25cqw;line-height:1.5}.drift-stop p{font-size:1.55cqw;line-height:1.8;margin-top:.45cqw;color:var(--muted)}.shared-paper{transform:rotate(2deg);padding:2cqw 2.3cqw}.shared-paper .paper-heading{font-size:1.25cqw;color:var(--muted);margin-bottom:1.4cqw}.contribution{padding:1.2cqw 1.4cqw;background:#fcf0cf;border-left:3px solid #d6a650}.contribution+.contribution{margin-top:1.3cqw;background:#e3eff0;border-color:#719fa2}.contribution .contributor{font-size:1.05cqw;letter-spacing:.1em;color:#68756b;margin-bottom:.8cqw}.contribution h3{font-size:2.1cqw;line-height:1.5}.contribution p{font-size:1.5cqw;line-height:1.8;margin-top:.55cqw;color:#586a60}.shared-paper .caption{margin-top:1.3cqw}
+    .voting-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:6cqw;margin-top:3.2cqw;align-items:center}.vote-paper{transform:rotate(-2deg);padding:2.2cqw 2.4cqw}.vote-paper .caption{margin-bottom:1cqw}.vote-sentence{display:flex;align-items:center;justify-content:space-between;gap:1cqw;padding:1.4cqw 0;border-bottom:1px solid var(--line)}.vote-sentence h3{font-size:1.85cqw;line-height:1.6}.vote-sentence .stickers{display:flex;gap:.4cqw;flex-shrink:0}.vote-paper .voting-caption{font-size:1.15cqw;margin-top:1.5cqw;color:var(--muted)}.voting-message .big-message{font-family:var(--serif);font-size:3.3cqw;line-height:1.6}.voting-message .body{margin-top:1.4cqw;font-size:1.7cqw;color:var(--muted)}.prize-strip{margin-top:2.5cqw;padding:1.2cqw 1.4cqw;background:var(--yellow);border-radius:4px;font-size:1.6cqw;line-height:1.7}.prize-strip small{font-size:1.2cqw;display:block;color:#586950}
+    .sample-layout{display:grid;grid-template-columns:.78fr 1.2fr;gap:5cqw;margin-top:3cqw;align-items:center}.sample-intro h2{font-size:4.7cqw;margin:0;line-height:1.6}.sample-intro .body{font-size:1.7cqw;margin-top:2cqw;color:#c9ddce;line-height:1.9}.sample-intro .stamp{margin-top:3cqw;color:var(--yellow);width:6.4cqw;height:6.4cqw}.sample-paper{padding:2.2cqw 2.6cqw;transform:rotate(1deg)}.sample-topline{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:1.4cqw;gap:1cqw}.sample-id{font-size:1.15cqw;color:var(--muted)}.sample-paper blockquote{font-family:var(--serif);font-size:2.8cqw;line-height:1.65;margin-top:1.7cqw}.sample-paper cite{display:block;font-size:1.25cqw;color:var(--muted);font-style:normal;margin-top:1cqw}.sample-paper .reason-label{font-size:1.1cqw;color:#a65238;margin-top:1.7cqw;border-top:1px dashed var(--line);padding-top:1.3cqw}.sample-paper .sample-reason{font-size:1.55cqw;line-height:1.95;margin-top:.6cqw}.sample .footline{color:#d0e1cf;font-size:1.35cqw}
+    .why-layout{display:grid;grid-template-columns:1.1fr .8fr;gap:8cqw;margin-top:3.5cqw;align-items:center}.why-point{padding:1.6cqw 0;border-bottom:1px solid var(--line)}.why-point h3{font-size:2.35cqw;margin-bottom:.7cqw}.why-point p{font-size:1.7cqw;line-height:1.85;color:var(--muted)}.one-visual{position:relative;background:var(--blue);padding:2cqw 2.7cqw 2.5cqw;transform:rotate(4deg);box-shadow:-1cqw 1cqw 0 #f4d581;border-radius:2px}.one-visual .one{font:15cqw/.95 Georgia,serif;color:var(--green);margin:0;text-align:center}.one-visual .one-caption{font-family:var(--serif);font-size:2cqw;text-align:center;line-height:1.7;margin-top:1cqw;border-top:1px solid #93b7b5;padding-top:1.5cqw}.one-visual .sticker{position:absolute;top:-1cqw;right:-1cqw;transform:rotate(-14deg);width:4cqw;height:4cqw;font-size:2cqw}
+    .intent{background:#fae7d7}.intent-layout{display:grid;grid-template-columns:1.15fr .8fr;gap:7cqw;margin-top:3.7cqw;align-items:center}.intent-statement{font-family:var(--serif);font-size:3.7cqw;line-height:1.65}.intent-layout .body{margin-top:1.9cqw;font-size:1.7cqw;line-height:1.9;color:#5a6b61}.encounters{position:relative;border-left:2px dashed #d0a489;padding-left:2.5cqw}.encounter{padding:1.3cqw 0 2cqw;position:relative}.encounter::before{content:"";position:absolute;left:-3.05cqw;top:2.1cqw;width:1cqw;height:1cqw;background:#fae7d7;border:2px solid #b67c61;border-radius:50%}.encounter:last-child::before{background:var(--orange);border-color:var(--orange)}.encounter h3{font-size:2.1cqw;line-height:1.5}.encounter p{font-size:1.5cqw;color:#6c7667;line-height:1.8;margin-top:.5cqw}.encounter:last-child h3{color:#a75036}
+    .connection{background:var(--blue)}.connection-layout{display:grid;grid-template-columns:.9fr 1.15fr;gap:7cqw;margin-top:3.4cqw;align-items:center}.connection-papers{position:relative;padding:1cqw 1.3cqw 1cqw 0}.connection-papers::before{content:"";position:absolute;inset:0;background:var(--yellow);transform:rotate(-7deg);border-radius:2px}.connection-paper{position:relative;padding:2cqw 2.3cqw;background:var(--cream);transform:rotate(2deg)}.connection-paper .label{font-size:1.15cqw}.connection-paper h3{font-size:2.4cqw;line-height:1.75;margin-top:1.3cqw}.connection-paper .body{font-size:1.5cqw;color:var(--muted);margin-top:1.3cqw;line-height:1.9}.connection-paper .paper-sign{font-size:1.2cqw;color:#a14e34;margin-top:1.5cqw;border-top:1px solid var(--line);padding-top:1.2cqw}.connection-point{border-bottom:1px solid #93b8b7;padding:1.1cqw 0}.connection-point h3{font-size:2.2cqw;margin-bottom:.6cqw}.connection-point p{font-size:1.6cqw;line-height:1.8;color:#4b6760}
+    .start-layout{display:grid;grid-template-columns:1.1fr .8fr;gap:5cqw;margin-top:4cqw;align-items:center}.start h2{font-size:5.4cqw;line-height:1.55;margin:0}.start .start-sub{font-family:var(--serif);font-size:2.2cqw;line-height:1.8;margin-top:2cqw;color:var(--muted)}.start-paper{background:#f8e5ad;padding:2.7cqw 2.5cqw;transform:rotate(3deg);box-shadow:-.8cqw 1cqw 0 #bed6d0;position:relative}.start-paper .paper-title{font-size:1.15cqw;letter-spacing:.15em;color:#5a705b;margin-bottom:1.5cqw}.start-step{display:flex;gap:1.1cqw;align-items:center;padding:1cqw 0}.start-step .step-check{width:2cqw;height:2cqw;border:1.5px solid #75886b;border-radius:3px;flex-shrink:0}.start-step h3{font-size:2.25cqw;line-height:1.5}.start-paper .caption{font-size:1.25cqw;margin-top:1.4cqw;border-top:1px solid #cdbb84;padding-top:1.3cqw;color:#53694f}.start .start-seal{position:absolute;right:6cqw;bottom:3.6cqw;display:flex;gap:.7cqw;transform:rotate(-8deg)}
+    .toolbar{min-height:34px;gap:14px;font-size:12px}.tools-left,.tools-right{display:flex;gap:8px;align-items:center}.tool{border:0;background:transparent;padding:8px 9px;border-radius:4px;color:#526b60;transition:background .2s}.tool:hover{background:#dce1d1}.tool[aria-expanded="true"]{background:var(--green);color:var(--cream)}.shortcut{font:11px Georgia,serif;margin-left:5px;opacity:.7}.page-count{font:14px Georgia,serif;text-align:center;min-width:49px}.nav-button{width:34px;height:34px;border:1px solid #bcc8b8;background:transparent;border-radius:50%;display:grid;place-items:center;font-size:18px}.nav-button:hover:not(:disabled){background:var(--green);color:var(--cream)}.dots{display:flex;gap:5px;align-items:center}.dot{border:0;background:transparent;width:20px;height:25px;padding:0}.dot::before{content:"";display:block;width:5px;height:5px;background:#aab9a8;border-radius:50%;margin:auto;transition:width .2s}.dot[aria-current="step"]::before{width:18px;background:var(--orange);border-radius:5px}.progress{height:3px;position:absolute;left:0;right:0;bottom:0;background:#244a4314;z-index:4}.progress span{display:block;background:var(--orange);width:10%;height:100%;transition:width .3s}.notes{width:min(920px,calc(100vw - 40px));background:#fffaf0;border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:4px;padding:23px 28px;margin:0 auto 10px}.notes-header{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:15px}.notes h2{font-size:16px;font-weight:500;margin:0}.notes .timing{font-size:12px;color:var(--muted);white-space:nowrap}.notes p{font-size:15px;line-height:1.95;color:#3c5849;margin:0 0 10px}.notes .cue{font-size:13px;color:#a45035;border-top:1px solid var(--line);padding-top:12px;margin-top:14px}.notes .privacy{font-size:12px;color:var(--muted);margin-top:8px}.notes-open.app{justify-content:flex-start}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:12px 20px;border-radius:5px;background:var(--green);color:var(--cream);font-size:13px;z-index:10}.fullscreen.app{padding:12px 0;gap:9px;background:#e6e8dc;--stage:min(calc(100vw - 24px),calc((100dvh - 68px)*16/9))}.fullscreen .masthead{display:none}.fullscreen .notes{max-height:27vh;overflow:auto}.fullscreen.notes-open{--stage:min(calc(100vw - 24px),calc((100dvh - 310px)*16/9))}
+    @keyframes arrive{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}@keyframes paper-in{from{opacity:0;translate:0 10px}to{opacity:1;translate:0 0}}.active .paper,.active .one-visual,.active .start-paper{animation:paper-in .5s .06s both}.active .stop-dot{animation:paper-in .4s both}.active .drift-stop:nth-child(2) .stop-dot{animation-delay:.1s}.active .drift-stop:nth-child(3) .stop-dot{animation-delay:.2s}.active .sticker{animation:paper-in .45s .15s both}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+    @media(max-width:650px){:root{--stage:calc(100vw - 24px)}.app{justify-content:flex-start;padding:16px 0;gap:12px}.brand{font-size:11px;letter-spacing:0}.masthead-info{font-size:10px}.masthead-info .venue{display:none}.deck{aspect-ratio:auto;height:max(760px,calc(100dvh - 142px));border-radius:6px}.slide{padding:7cqw 6cqw}.eyebrow{font-size:2.7cqw;gap:2cqw}.section-tag{font-size:2.35cqw;padding:1cqw 1.7cqw}.folio{font-size:3.7cqw;right:6cqw;top:8cqw}.slide h2{font-size:6.8cqw;line-height:1.6;margin-top:7cqw}.body{font-size:4cqw}.caption{font-size:3cqw}.footline{font-size:3.3cqw;left:6cqw;right:6cqw;bottom:6cqw}.footline::before{width:5cqw;margin-right:2cqw}.paper{padding:5cqw;box-shadow:1.5cqw 2cqw 0 #244a430b}.paper::after{width:18cqw;height:3.5cqw;top:-1.5cqw}.label{font-size:3.1cqw;padding:.8cqw 1.7cqw}.rule-number{font-size:3.5cqw}.stamp{width:17cqw;height:17cqw;font-size:2.5cqw;gap:.6cqw}.stamp b{font-size:3.5cqw}.stamp::after{inset:1cqw}.sticker{width:5.7cqw;height:5.7cqw;font-size:3cqw}.envelope{width:56cqw;height:32cqw}.envelope .letter-peek{height:37cqw;bottom:8cqw;padding:4cqw}.letter-peek .peek-title{font-size:5cqw}.letter-peek .peek-line{margin:3cqw 0}.envelope .envelope-seal{width:9cqw;height:9cqw;font-size:4cqw}.envelope .envelope-address{left:4cqw;bottom:3cqw;font-size:2.4cqw}.cover-layout{display:block;margin-top:10cqw}.cover h1{font-size:12cqw;line-height:1.5}.cover .intro{font-size:4cqw;margin-top:4cqw}.cover .visual{width:65cqw;margin:12cqw auto 0;padding-top:10cqw}.cover .stamp{right:-3cqw;top:0}.cover .cover-date{font-size:2.8cqw;left:6cqw;bottom:7cqw}.cover .corner-arrow{font-size:8cqw;right:6cqw;bottom:7cqw}.write-layout,.number-layout,.drift-layout,.voting-layout,.sample-layout,.why-layout,.intent-layout,.connection-layout,.start-layout{display:block;margin-top:6cqw}.writing-point{grid-template-columns:6cqw 1fr;gap:2cqw;padding:2.8cqw 0}.writing-point h3{font-size:4.7cqw}.writing-point p{font-size:3.4cqw;line-height:1.8}.writing-point .rule-number{padding-top:1cqw}.category-samples{gap:1.5cqw;margin-top:3cqw}.category-samples .caption{font-size:2.7cqw}.writing-paper{margin-top:7cqw;padding:4cqw 5cqw;transform:rotate(1deg)}.writing-paper .paper-heading{font-size:2.8cqw;padding-bottom:2cqw}.paper-slot{margin-top:2cqw}.paper-slot .slot-label{font-size:2.6cqw}.paper-slot .slot-main{font-size:4.3cqw}.paper-slot .slot-hint{font-size:3.1cqw}.writing-paper .source-reminder{font-size:2.6cqw;margin-top:2cqw;padding-top:2cqw}.numbering-paper{height:55cqw;padding:5cqw;margin-top:10cqw}.number-badge{font-size:3.2cqw;padding:1cqw 2cqw;gap:2cqw}.number-badge b{font-size:6cqw}.numbering-paper .number-note{font-size:2.8cqw;top:7cqw;right:5cqw}.numbering-paper .ghost-text{font-size:5cqw;margin-top:6cqw}.numbering-paper .ghost-lines{height:15cqw;margin-top:3cqw;background:repeating-linear-gradient(transparent,transparent 4.8cqw,#dfe1d3 4.8cqw,#dfe1d3 calc(4.8cqw + 1px))}.numbering-paper .stamp{bottom:4cqw;right:4cqw;width:13cqw;height:13cqw;font-size:2cqw}.numbering-paper .stamp b{font-size:2.8cqw}.packing-side{display:grid;grid-template-columns:1fr 1fr;gap:6cqw;align-items:center;margin-top:12cqw}.packing-side .envelope{width:37cqw;height:22cqw;margin:0}.packing-side h3{font-size:5cqw}.packing-side .body{font-size:3.3cqw;margin-top:3cqw}.packing-arrow{display:none}.drift-route{padding-left:1cqw;display:flex;gap:3cqw}.drift-route::before{display:none}.drift-stop{display:block;flex:1;padding:0}.stop-dot{width:6cqw;height:6cqw;font-size:3cqw;line-height:6cqw;margin-bottom:2cqw}.drift-stop h3{font-size:4cqw}.drift-stop p{font-size:3.1cqw;margin-top:2cqw}.shared-paper{margin-top:10cqw;padding:4cqw 5cqw}.shared-paper .paper-heading{font-size:3cqw;margin-bottom:3cqw}.contribution{padding:3cqw;border-left-width:3px}.contribution+.contribution{margin-top:3cqw}.contribution .contributor{font-size:2.6cqw;margin-bottom:2cqw}.contribution h3{font-size:4.5cqw}.contribution p{font-size:3.3cqw;margin-top:1cqw}.shared-paper .caption{font-size:2.8cqw;margin-top:3cqw}.vote-paper{padding:5cqw;margin-top:9cqw}.vote-paper .caption{font-size:2.8cqw;margin-bottom:2cqw}.vote-sentence{padding:3cqw 0;gap:2cqw}.vote-sentence h3{font-size:4.3cqw}.vote-sentence .stickers{gap:1cqw}.vote-paper .voting-caption{font-size:2.7cqw;margin-top:3cqw}.voting-message{margin-top:8cqw}.voting-message .big-message{font-size:6cqw}.voting-message .big-message br{display:none}.voting-message .body{font-size:3.6cqw;margin-top:3cqw}.prize-strip{margin-top:4cqw;padding:3cqw 4cqw;font-size:3.8cqw}.prize-strip small{font-size:3cqw}.sample-intro h2{font-size:8cqw;line-height:1.5}.sample-intro h2 br{display:none}.sample-intro .body{font-size:3.5cqw;margin-top:3cqw}.sample-intro .body br{display:none}.sample-intro .stamp{display:none}.sample-paper{margin-top:9cqw;padding:5cqw}.sample-topline{padding-bottom:3cqw}.sample-id{font-size:2.7cqw}.sample-paper .label{font-size:2.8cqw}.sample-paper blockquote{font-size:6.5cqw;margin-top:5cqw;line-height:1.8}.sample-paper cite{font-size:3cqw;margin-top:2cqw}.sample-paper .reason-label{font-size:2.7cqw;margin-top:4cqw;padding-top:3cqw}.sample-paper .sample-reason{font-size:3.5cqw;line-height:2;margin-top:2cqw}.sample .footline{font-size:3cqw}.why-point{padding:4cqw 0}.why-point h3{font-size:5.3cqw;margin-bottom:2cqw}.why-point p{font-size:3.6cqw}.one-visual{width:54cqw;margin:8cqw auto 0;padding:4cqw 5cqw;box-shadow:-2cqw 2cqw 0 var(--yellow)}.one-visual .one{font-size:30cqw}.one-visual .one-caption{font-size:4cqw;margin-top:2cqw;padding-top:3cqw}.one-visual .sticker{width:9cqw;height:9cqw;font-size:4.5cqw;right:-2cqw;top:-2cqw}.intent-statement{font-size:7.8cqw;line-height:1.6}.intent-layout .body{font-size:3.7cqw;line-height:1.9;margin-top:4cqw}.encounters{margin-top:8cqw;padding-left:6cqw}.encounter{padding:2.5cqw 0 3cqw}.encounter::before{left:-7.3cqw;top:5cqw;width:2.3cqw;height:2.3cqw}.encounter h3{font-size:4.6cqw}.encounter p{font-size:3.3cqw;margin-top:1cqw}.connection-papers{width:76cqw;margin:7cqw auto 9cqw;padding:0}.connection-paper{padding:5cqw}.connection-paper .label{font-size:2.7cqw}.connection-paper h3{font-size:5.2cqw;margin-top:3cqw;line-height:1.6}.connection-paper .body{font-size:3.3cqw;margin-top:3cqw}.connection-paper .paper-sign{font-size:2.7cqw;margin-top:3cqw;padding-top:3cqw}.connection-point{padding:2.3cqw 0}.connection-point h3{font-size:4.5cqw;margin-bottom:1cqw}.connection-point p{font-size:3.2cqw}.start-layout{margin-top:12cqw}.start h2{font-size:10.5cqw;line-height:1.5}.start .start-sub{font-size:4.8cqw;margin-top:4cqw}.start-paper{width:75cqw;margin:10cqw auto 0;padding:6cqw;box-shadow:-2cqw 2.5cqw 0 #bed6d0}.start-paper .paper-title{font-size:2.8cqw;margin-bottom:3cqw}.start-step{gap:3cqw;padding:2.5cqw 0}.start-step .step-check{width:4.5cqw;height:4.5cqw}.start-step h3{font-size:5cqw}.start-paper .caption{font-size:2.8cqw;margin-top:3cqw;padding-top:3cqw}.start .start-seal{right:6cqw;bottom:7cqw;gap:1.7cqw}.toolbar{gap:4px;flex-wrap:wrap}.tools-left{gap:0}.tool{font-size:11px;padding:7px 5px}.shortcut{display:none}.dots{order:3;width:100%;justify-content:center;gap:7px}.dot{width:17px;height:22px}.dot[aria-current="step"]::before{width:16px}.tools-right{gap:5px}.nav-button{width:29px;height:29px}.page-count{min-width:41px;font-size:12px}.notes{padding:20px}.notes-header{align-items:flex-start}.notes .timing{font-size:11px}.fullscreen.app{--stage:calc(100vw - 20px);padding-top:8px}.fullscreen.notes-open{--stage:calc(100vw - 20px)}.fullscreen .deck{height:max(760px,calc(100dvh - 90px))}.fullscreen .notes{max-height:none}.fullscreen.notes-open .deck{height:760px}}
+    .letter-peek{color:var(--ink)}.stamp span,.stamp b{white-space:nowrap}.sample-intro .stamp b{font-size:1.2cqw}.sample-intro .stamp span{font-size:1cqw}
+    .cover .letter-peek{height:23cqw}@media(max-width:650px){.cover .letter-peek{height:43cqw}.cover .peek-title{font-size:4.7cqw;line-height:1.5}}
+    @media print{body,.app{background:white}.masthead,.toolbar,.notes,.toast{display:none!important}.app{display:block;padding:0}.deck{width:100%;aspect-ratio:auto;overflow:visible;box-shadow:none;container-type:inline-size}.slide,.slide:not(.active){position:relative;display:block!important;height:56.25cqw;break-after:page;animation:none!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}.progress{display:none}@page{size:A4 landscape;margin:0}}
+    .cover .visual{padding-top:5cqw;transform:rotate(3deg)}.cover .envelope{width:30cqw;height:18cqw}.cover .letter-peek{height:24cqw;bottom:4.5cqw;padding:2.2cqw}.cover .letter-peek .peek-title{font-size:2.15cqw;line-height:1.7;font-weight:600}.cover .intro{margin-top:3cqw}.start .start-layout{grid-template-columns:1.2fr .85fr;gap:4cqw;margin-top:5.2cqw}.start h2{font-size:4.8cqw;line-height:1.6}.start .start-sub{font-family:var(--sans);font-size:1.8cqw;line-height:1.9;margin-top:2cqw}.start .start-paper{background:#e3edef;box-shadow:-.6cqw .8cqw 0 #eadfbb;transform:rotate(1.5deg)}.start .start-paper .caption{border-color:#b8cdcc}.start .footline{color:var(--muted);font-size:1.35cqw}
+    @media(max-width:650px){.cover .visual{width:68cqw;margin-top:16cqw;padding-top:10cqw}.cover .envelope{width:62cqw;height:35cqw}.cover .letter-peek{height:46cqw;bottom:8.5cqw;padding:4cqw}.cover .letter-peek .peek-title{font-size:4.5cqw;line-height:1.8}.cover .intro{font-size:4cqw;margin-top:5cqw}.start .start-layout{display:block;margin-top:14cqw}.start h2{font-size:9.6cqw;line-height:1.6}.start .start-sub{font-size:4.2cqw;margin-top:5cqw}.start .start-paper{margin-top:12cqw;box-shadow:-1.5cqw 2cqw 0 #eadfbb}.start .footline{font-size:3cqw}}
+    .cover .peek-source{display:block;font-size:1.05cqw;line-height:1.5;font-style:normal;margin-top:.6cqw;color:var(--muted)}@media(max-width:650px){.cover .peek-source{font-size:2.6cqw;margin-top:1cqw}}
+    .app.is-cover .masthead-info{visibility:hidden}
+  </style>
+</head>
+<body>
+  <main class="app is-cover" id="app">
+    <header class="masthead"><div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>字句漫游，纸条漂流</span></div><div class="masthead-info">11.15 · 15:00—17:00 <span class="venue"> / 心理健康中心</span></div></header>
+    <div class="deck" id="deck" role="region" aria-label="字句漫游，纸条漂流：十页活动介绍与主讲分享" tabindex="-1">
+      <section class="slide cover dark active" aria-labelledby="title-1" data-title="欢迎来到纸条漂流">
+        <p class="eyebrow">心协 · 互动读书会</p><span class="folio" aria-hidden="true">01</span>
+        <div class="cover-layout"><div><h1 id="title-1">字句漫游，<br><span>纸条漂流</span></h1></div><div class="visual"><div class="envelope"><div class="letter-peek"><p class="peek-title">没有人<br>是一座孤岛。</p><cite class="peek-source">—— 约翰·多恩</cite><i class="peek-line" aria-hidden="true"></i></div><span class="envelope-seal" aria-hidden="true">字</span></div></div></div>
+        
+      </section>
+
+      <section class="slide write" aria-labelledby="title-2" data-title="在信笺上写什么" hidden>
+        <p class="eyebrow"><span class="section-tag">玩法 01</span> 先写下你的分享</p><span class="folio" aria-hidden="true">02</span>
+        <h2 id="title-2">一句话，配上<span class="accent">你自己的理由</span>。</h2>
+        <div class="write-layout"><div class="writing-points">
+          <div class="writing-point"><span class="rule-number">01</span><div><h3>自拟一个分类</h3><p>按你的理解，给这句话起一个分类名。</p></div></div>
+          <div class="writing-point"><span class="rule-number">02</span><div><h3>写下一句想分享的话</h3><p>引用书中文字时，附上书名与作者。</p></div></div>
+          <div class="writing-point"><span class="rule-number">03</span><div><h3>写一点简短的推荐理由</h3><p>怎样发现它？或为什么被它触动？</p></div></div>
+          <div class="category-samples"><span class="caption">分类参考</span><span class="label">成长</span><span class="label blue">关系</span><span class="label outline">日常</span><span class="caption">……不限这些</span></div>
+        </div><div class="paper writing-paper"><p class="paper-heading">我们的信笺 · 书写位置示意</p><div class="paper-slot"><p class="slot-label">分类</p><p class="slot-main">一个你自己起的名字</p></div><div class="paper-slot"><p class="slot-label">想分享的那句话</p><p class="slot-main">把你选中的文字写在这里</p></div><div class="paper-slot"><p class="slot-label">推荐理由</p><p class="slot-hint">它与你的相遇，<br>或它打动你的原因。</p></div></div></div>
+        <p class="footline">从你愿意分享的部分开始，一个朴素的理由就很好。</p>
+      </section>
+
+      <section class="slide numbering" aria-labelledby="title-3" data-title="编号，装封，准备出发" hidden>
+        <p class="eyebrow"><span class="section-tag">玩法 02</span> 每个人都有一个序号</p><span class="folio" aria-hidden="true">03</span>
+        <h2 id="title-3"><span class="accent">编号</span>，装封，准备出发。</h2>
+        <div class="number-layout"><div class="paper numbering-paper"><div class="number-badge"><span>序号</span><b>07</b></div><p class="ghost-text">你写下的句子与推荐理由</p><div class="ghost-lines" aria-hidden="true"></div><div class="stamp" aria-hidden="true"><span>纸条漂流</span><b>准备出发</b></div></div><div class="packing-side"><div class="envelope" aria-hidden="true"><span class="envelope-seal">寄</span><span class="envelope-address">下一站 · 随机相遇</span></div><div><h3>写好后，装进信封。</h3><p class="body">主讲人为每位参与者编号，<br>信笺随后进入随机漂流。</p></div></div></div>
+        <p class="footline">07 仅作序号位置示意，实际编号以现场安排为准。</p>
+      </section>
+
+      <section class="slide drift" aria-labelledby="title-4" data-title="纸条怎样漂流" hidden>
+        <p class="eyebrow"><span class="section-tag">玩法 03</span> 在同一张信笺上继续分享</p><span class="folio" aria-hidden="true">04</span>
+        <h2 id="title-4">读到别人的话，再添上<span class="accent">你的一句</span>。</h2>
+        <div class="drift-layout"><div class="drift-route">
+          <div class="drift-stop"><span class="stop-dot">1</span><div><h3>随机传递</h3><p>打开信封，阅读已有的分享。</p></div></div>
+          <div class="drift-stop"><span class="stop-dot">2</span><div><h3>补充你自己的分享</h3><p>在这张信笺上，写下一句话与推荐理由。</p></div></div>
+          <div class="drift-stop"><span class="stop-dot">3</span><div><h3>再次装封传递</h3><p>写好后装回信封，再次随机漂流。</p></div></div>
+        </div><div class="paper shared-paper"><p class="paper-heading">同一张信笺 · 不同人的分享</p><div class="contribution"><p class="contributor">已有内容 · 第一位分享者</p><h3>选中的句子</h3><p>分类与推荐理由</p></div><div class="contribution"><p class="contributor">新增内容 · 下一位分享者</p><h3>自己想分享的一句话</h3><p>再写下自己的推荐理由</p></div></div></div>
+        <p class="footline">保留已有内容，在空白区域补充自己的句子与推荐理由。</p>
+      </section>
+
+      <section class="slide voting" aria-labelledby="title-5" data-title="用贴纸为心动的句子投票" hidden>
+        <p class="eyebrow"><span class="section-tag">玩法 04</span> 用贴纸留下你的共鸣</p><span class="folio" aria-hidden="true">05</span>
+        <h2 id="title-5">把贴纸，送给<span class="accent">触动你的句子</span>。</h2>
+        <div class="voting-layout"><div class="paper vote-paper"><p class="caption">贴纸位置示意 · 贴在对应句子后面</p><div class="vote-sentence"><h3>读到后，有所触动的句子</h3><span class="stickers" aria-hidden="true"><i class="sticker">✦</i><i class="sticker yellow">✦</i></span></div><div class="vote-sentence"><h3>另一句让你停留的话</h3><span class="stickers" aria-hidden="true"><i class="sticker blue">✦</i></span></div><div class="vote-sentence"><h3>纸上还有不同人的分享</h3><span class="stickers" aria-hidden="true"><i class="sticker yellow">✦</i><i class="sticker">✦</i></span></div><p class="voting-caption">示意数量不代表每人的贴纸配额。</p></div><div class="voting-message"><p class="big-message">让共鸣，<br>留下一个标记。</p><p class="body">使用我们提供的贴纸，<br>为有所触动的句子投票。</p><div class="prize-strip">贴纸较多的分享，获得奖品。<small>围巾、保温杯等暖冬好礼</small></div></div></div>
+        <p class="footline">规则介绍完了，接下来，我先给大家打个样。</p>
+      </section>
+
+      <section class="slide sample dark" aria-labelledby="title-6" data-title="我先给大家打个样" hidden>
+        <p class="eyebrow"><span class="section-tag">我的分享</span> 一张完整的示范信笺</p><span class="folio" aria-hidden="true">06</span>
+        <div class="sample-layout"><div class="sample-intro"><h2 id="title-6">我先给大家<br><span class="accent">打个样。</span></h2><p class="body">一个分类，一句喜欢的话，<br>再加一点它与我有关的理由。</p><div class="stamp" aria-hidden="true"><span>主讲人</span><b>先写一句</b></div></div><div class="paper sample-paper"><div class="sample-topline"><span class="sample-id">主讲示范</span><span class="label">分类 · 人与人的连接</span></div><blockquote>一切真实的生活<br>都是相遇。</blockquote><cite>—— 马丁·布伯《我与你》</cite><p class="reason-label">我的推荐理由</p><p class="sample-reason">我推荐这句话，因为许多时刻之所以绚丽、难忘，也与当时一起参与的人有关。一次交谈、一段陪伴，都可能让平常的日子有了特别的意义。它提醒我珍惜人与人的相遇，也试着与身边的人多一点交流。</p></div></div>
+        <p class="footline">把文字写下来，也让别人知道：你为什么选择它。</p>
+      </section>
+
+      <section class="slide why" aria-labelledby="title-7" data-title="为什么从一句话开始" hidden>
+        <p class="eyebrow"><span class="section-tag">我的分享</span> 为什么是一句话</p><span class="folio" aria-hidden="true">07</span>
+        <h2 id="title-7">一本书那么长，<span class="accent">一句话也能开始</span>。</h2>
+        <div class="why-layout"><div><div class="why-point"><h3>容易留下来</h3><p>情节可能模糊，一句话却会<br>在某个时刻重新浮现。</p></div><div class="why-point"><h3>容易聊起来</h3><p>从“它为什么打动我”说起，<br>每个人都有自己的入口。</p></div></div><div class="one-visual" aria-hidden="true"><span class="sticker">✦</span><p class="one">1</p><p class="one-caption">句可以记住的话<br>个能聊起来的理由</p></div></div>
+        <p class="footline">一句话是入口，也可以带我们回到更长的阅读。</p>
+      </section>
+
+      <section class="slide intent" aria-labelledby="title-8" data-title="我为什么选择相遇" hidden>
+        <p class="eyebrow"><span class="section-tag">我的分享</span> 为什么我选择这句话</p><span class="folio" aria-hidden="true">08</span>
+        <h2 id="title-8">让大家，<span class="accent">产生正式的交集</span>。</h2>
+        <div class="intent-layout"><div><p class="intent-statement">从每天擦肩而过，<br>到了解你一点。</p><p class="body">一句书摘，一点推荐理由，<br>也许就能成为一个自然的话题。</p></div><div class="encounters"><div class="encounter"><h3>同一间教室</h3><p>我们经常看见彼此。</p></div><div class="encounter"><h3>同一条走廊</h3><p>也许还没机会认真聊聊。</p></div><div class="encounter"><h3>同一张信笺</h3><p>今天，从自己的那一句开始。</p></div></div></div>
+        <p class="footline">这就是我们社团决定举办这次读书会的初衷。</p>
+      </section>
+
+      <section class="slide connection" aria-labelledby="title-9" data-title="一句话，怎样让我们认识彼此" hidden>
+        <p class="eyebrow"><span class="section-tag">我的分享</span> 在文字里认识彼此</p><span class="folio" aria-hidden="true">09</span>
+        <h2 id="title-9">读到一句话，也看见<span class="accent">一个人的在意</span>。</h2>
+        <div class="connection-layout"><div class="connection-papers"><div class="connection-paper"><span class="label">文字与你，也与我</span><h3>你为什么选中它？<br>我又从中想到了什么？</h3><p class="body">同一句话，可能有不同理解。<br>不同的句子，也可能带来共鸣。</p><p class="paper-sign">同一张纸上，留下不同人的分享。</p></div></div><div><div class="connection-point"><h3>读一读对方的理由</h3><p>文字背后，有一个具体的人。</p></div><div class="connection-point"><h3>给不同理解留一点空间</h3><p>交流时，也听听对方为什么这样想。</p></div><div class="connection-point"><h3>再写下你自己的一句</h3><p>补充句子与理由，让彼此多一点了解。</p></div></div></div>
+        <p class="footline">安静地读，认真地听，也是在参与交流。</p>
+      </section>
+
+      <section class="slide start" aria-labelledby="title-10" data-title="现在，写下你的那一句" hidden>
+        <p class="eyebrow">现在开始</p><span class="folio" aria-hidden="true">10</span>
+        <div class="start-layout"><div><h2 id="title-10">你想分享的，<br><span class="accent">是哪一句？</span></h2><p class="start-sub">写下它，<br>也说说你为什么喜欢。</p></div><div class="start-paper"><p class="paper-title">你的第一份分享</p><div class="start-step"><span class="step-check" aria-hidden="true"></span><h3>一句想分享的话</h3></div><div class="start-step"><span class="step-check" aria-hidden="true"></span><h3>一个自拟的分类</h3></div><div class="start-step"><span class="step-check" aria-hidden="true"></span><h3>一段简短的理由</h3></div><p class="caption">引用书中文字，附上书名与作者。</p></div></div>
+        <p class="footline">写好后，由主讲人编号，装入信封，开始漂流。</p>
+      </section>
+      <div class="progress" role="progressbar" aria-label="演示进度" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1"><span id="progressFill"></span></div>
+    </div>
+    <nav class="toolbar" aria-label="演示控制"><div class="tools-left"><button class="tool" id="notesToggle" aria-expanded="false" aria-controls="notes" title="显示或隐藏讲稿（N）">主讲参考词<span class="shortcut">N</span></button><button class="tool" id="fullscreenToggle" title="切换全屏（F）">全屏<span class="shortcut">F</span></button></div><div class="dots" id="dots" aria-label="选择页面"></div><div class="tools-right"><button class="nav-button" id="prev" aria-label="上一页" title="上一页（←）" disabled>←</button><span class="page-count" id="pageCount">01 / 10</span><button class="nav-button" id="next" aria-label="下一页" title="下一页（→ 或空格）">→</button></div></nav>
+    <aside class="notes" id="notes" aria-label="当前页主讲参考词" hidden><div class="notes-header"><h2 id="notesTitle"></h2><span class="timing" id="notesTiming"></span></div><div id="notesBody"></div><p class="cue" id="notesCue"></p><p class="privacy">投屏前请收起参考词；打开后，它会显示在同一个屏幕上。N 键可快速收起。</p></aside>
+    <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+  </main>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script>
+    'use strict';
+    const speakerNotes = [
+  {
+    "timing": "建议 30—45 秒",
+    "paragraphs": [
+      "大家好，欢迎来到“字句漫游，纸条漂流”。今天我们会一起把喜欢的话写在信笺上，让它们装进信封，在不同的人之间随机传递。",
+      "先用几页把玩法讲清楚。之后我会把自己选的句子写成一张示范信笺，也和大家聊聊，我们社团为什么决定举办这次活动。大家手里的纸、信封和彩笔，都可以在接下来的环节使用。",
+      "信封上的“没有人是一座孤岛”出自约翰·多恩《紧急时刻的祷告》第十七篇默想。我们想借阅读和分享，让大家有机会建立联系。"
+    ],
+    "cue": "先介绍活动名称和整体形式，暂时不展开个人观点。过渡：第一步，在信笺上写什么？"
+  },
+  {
+    "timing": "建议 60—75 秒",
+    "paragraphs": [
+      "每个人先选一句想分享的话，写在我们提供的信笺上。请给它自拟一个分类，再写一点简短的推荐理由。分类可以是成长、关系、日常，也可以是你自己起的名字，屏幕上的几个词只是参考。",
+      "推荐理由可以说说你是怎样发现它的，也可以写它为什么触动你，或者让你想到了什么。任选一个你愿意聊的方向就可以，不需要三个问题全部回答。",
+      "如果引用书里的文字，也请附上书名和作者，方便别人找回原文、继续阅读。等会儿我的示范里，会把这些要素放在一起给大家看。"
+    ],
+    "cue": "指着信笺上的分类、句子、推荐理由依次讲解。理由可以简短、日常，不要求深刻。"
+  },
+  {
+    "timing": "建议 40—55 秒",
+    "paragraphs": [
+      "每个人都会有一个自己的序号，我会把这个序号写在信笺左上角。屏幕上的 07 只是示意，实际编号以现场为准。",
+      "大家写好之后，把信笺装进信封，准备开始漂流。这里先请大家记住两件事：左上角是你的序号，纸张写好后要放进信封。接下来，信封会随机去到另一位同学手里。"
+    ],
+    "cue": "编号由主讲人填写。现场可拿起一张信笺和信封示意，不必为演示另编正式编号。"
+  },
+  {
+    "timing": "建议 75—90 秒",
+    "paragraphs": [
+      "第一次漂流时，信封会随机传递。收到之后，请先打开信封，读一读纸上已经写下的句子和推荐理由。",
+      "接着，请在这张信笺上补充你自己想分享的一句话，以及简短的推荐理由。保留前一位的内容，在后面的空白区域继续写。也就是说，这张纸上会留下不同人的分享。",
+      "写完之后，把信笺重新放回信封，再次随机传递。大家可以看右边的示意：上面是已有分享，下面是下一位新增的分享。"
+    ],
+    "cue": "组织建议：如按句子奖励分享者，建议请补充者在自己的内容旁标注个人序号，便于归属和统计。此建议需按现场实际采用，不作为已确定规则宣读。"
+  },
+  {
+    "timing": "建议 45—60 秒",
+    "paragraphs": [
+      "接下来，大家可以使用我们提供的贴纸，为有所触动的句子投票。请把贴纸贴在对应句子的后面，这样每句话获得的票数就容易看清。",
+      "获得较多贴纸的分享会得到奖品，我们准备了围巾、保温杯等暖冬好礼。领取和使用贴纸的具体安排，按现场说明进行。",
+      "到这里，活动怎么玩就介绍完了。接下来，我先给大家打个样：如果是我来写这张信笺，我会写什么？"
+    ],
+    "cue": "不自行设定每人贴纸数、是否可投自己、并列处理办法或获奖人数。颁奖前确认句子归属。"
+  },
+  {
+    "timing": "建议 75—90 秒",
+    "paragraphs": [
+      "我会把这句话分到“人与人的连接”这个类别。句子是：“一切真实的生活都是相遇。”出处是马丁·布伯的《我与你》。不同版本的中文译文略有差异，这里采用的是这个常见译法。",
+      "我的推荐理由是：我推荐这句话，因为许多时刻之所以绚丽、难忘，也与当时一起参与的人有关。一次交谈、一段陪伴，都可能让平常的日子有了特别的意义。它提醒我珍惜人与人的相遇，也试着与身边的人多一点交流。",
+      "这就是一张完整的分享信笺：一个自己起的分类，一句想分享的话，一个准确的出处，再加上一点具体的推荐理由。后面我想继续聊聊，这个形式和我的想法有什么关系。"
+    ],
+    "cue": "推荐理由围绕阅读感悟展开。可以谈对文字的理解，无需讲述个人经历。"
+  },
+  {
+    "timing": "建议 60—75 秒",
+    "paragraphs": [
+      "一本书那么长，为什么我们今天从一句话开始？大家可以想想，有没有一本书，情节已经记不太清，但其中一句话，会在某个时候重新回到脑海里。",
+      "一句话比较容易留下来，也比较容易聊起来。我们可以从“我为什么喜欢它”说起，不需要一开始就做完整的读书报告。",
+      "书摘有自己的上下文，今天选一句话，是给交流一个入口。如果别人的分享让你感兴趣，也欢迎回到书里，看看它原本怎样展开。"
+    ],
+    "cue": "可停顿几秒，让大家想起自己的那句话。过渡：那么，我为什么选择“相遇”？"
+  },
+  {
+    "timing": "建议 75—90 秒",
+    "paragraphs": [
+      "读到这句话，我会想到：许多时刻之所以绚丽、难忘，也与当时一起参与的人有关。一起交谈、一起完成一件事，这些人与人之间的联系，会让日子有了特别的意义。",
+      "这也是我想推荐它的原因。它让我们留意身边的人，也提醒我们，交流和陪伴值得珍惜。分享一句话时，可以谈谈自己的理解，或说说它带来的启发。",
+      "我们社团决定举办这次读书会，就是希望让大家产生正式的交集。借一句话、一个推荐理由，让平时可能只是擦肩而过的人，有机会坐下来交流。每个人都可以选择自己舒服的表达方式。"
+    ],
+    "cue": "讲述顺序：人与人共同参与让时刻有了意义 → 珍惜相遇与交流 → 社团活动的初衷。这是对引文的个人理解；参与者无需公开个人经历。"
+  },
+  {
+    "timing": "建议 60—75 秒",
+    "paragraphs": [
+      "读到别人的句子时，我们也许会共鸣，也许会想到一段完全不同的经历。同一句话，在不同的人那里，可能有不同的意义。",
+      "我们可以认真读完对方的推荐理由，试着理解：这个人为什么选中了这一句？小范围讨论时，也可以问一问对方的想法。安静地读、认真地听，同样是在参与。",
+      "而信笺上的任务仍然很清楚：读完已有内容，再补充你自己想分享的一句和推荐理由。我们通过这些不同的选择，在同一张纸上认识彼此。"
+    ],
+    "cue": "允许不同理解，也尊重表达边界。正式书写任务是补充自己的句子与理由，不改成仅写回信。"
+  },
+  {
+    "timing": "建议 30—45 秒",
+    "paragraphs": [
+      "接下来，把信笺交给大家。先选一句想分享的话，给它起一个分类，再写一点推荐理由。可以从“我在哪里读到它”或“它为什么打动我”开始。",
+      "引用书中文字时记得附上书名和作者。写好后，我会在左上角写上你的序号，再请大家装入信封，按照现场安排开始漂流。",
+      "希望今天，我们能借一句话，给彼此多一个认识的机会。现在，写下你的那一句吧。"
+    ],
+    "cue": "停留在此页，引导参与者开始书写。实际编号顺序、传递方式与贴纸发放按现场安排执行。"
+  }
+];
+    const app=document.getElementById('app');
+    const slides=[...document.querySelectorAll('.slide')];
+    const dots=document.getElementById('dots');
+    const notes=document.getElementById('notes');
+    const notesToggle=document.getElementById('notesToggle');
+    const fullscreenToggle=document.getElementById('fullscreenToggle');
+    const prev=document.getElementById('prev');
+    const next=document.getElementById('next');
+    const progress=document.querySelector('[role="progressbar"]');
+    const pad=n=>String(n).padStart(2,'0');
+    let current=0;
+    let toastTimeout;
+    function readHash(){const match=location.hash.match(/^#slide-(\d+)$/);return match&&Number(match[1])>=1&&Number(match[1])<=slides.length?Number(match[1])-1:0;}
+    slides.forEach((slide,index)=>{
+      const dot=document.createElement('button');
+      dot.className='dot';dot.type='button';
+      dot.setAttribute('aria-label',`第 ${index+1} 页：${slide.dataset.title}`);
+      dot.title=`${index+1}. ${slide.dataset.title}`;
+      dot.addEventListener('click',()=>showSlide(index));dots.append(dot);
+    });
+    function renderNotes(){
+      const note=speakerNotes[current];
+      document.getElementById('notesTitle').textContent=`${pad(current+1)} · ${slides[current].dataset.title}`;
+      document.getElementById('notesTiming').textContent=note.timing;
+      const body=document.getElementById('notesBody');body.replaceChildren();
+      note.paragraphs.forEach(text=>{const p=document.createElement('p');p.textContent=text;body.append(p);});
+      document.getElementById('notesCue').textContent=note.cue;
+    }
+    function showSlide(index,updateHash=true){
+      current=Math.max(0,Math.min(slides.length-1,index));
+      app.classList.toggle('is-cover',current===0);
+      const focused=document.activeElement;
+      slides.forEach((slide,i)=>{slide.hidden=i!==current;slide.classList.toggle('active',i===current);slide.setAttribute('aria-hidden',String(i!==current));});
+      [...dots.children].forEach((dot,i)=>{if(i===current)dot.setAttribute('aria-current','step');else dot.removeAttribute('aria-current');});
+      prev.disabled=current===0;next.disabled=current===slides.length-1;
+      if(focused===prev&&prev.disabled||focused===next&&next.disabled)document.getElementById('deck').focus({preventScroll:true});
+      document.getElementById('pageCount').textContent=`${pad(current+1)} / ${pad(slides.length)}`;
+      document.getElementById('progressFill').style.width=`${(current+1)/slides.length*100}%`;
+      progress.setAttribute('aria-valuenow',String(current+1));
+      document.getElementById('announcement').textContent=`第 ${current+1} 页，共 ${slides.length} 页：${slides[current].dataset.title}`;
+      renderNotes();
+      if(updateHash){try{history.replaceState(null,'',`#slide-${current+1}`);}catch{}}
+    }
+    function toggleNotes(force){
+      const open=typeof force==='boolean'?force:notes.hidden;
+      notes.hidden=!open;notesToggle.setAttribute('aria-expanded',String(open));
+      app.classList.toggle('notes-open',open);
+    }
+    function toast(message){const el=document.getElementById('toast');clearTimeout(toastTimeout);el.textContent=message;el.hidden=false;toastTimeout=setTimeout(()=>{el.hidden=true;},4500);}
+    async function toggleFullscreen(){
+      try{
+        if(document.fullscreenElement)await document.exitFullscreen();
+        else if(app.requestFullscreen){toggleNotes(false);await app.requestFullscreen();}
+        else toast('当前浏览器不支持页面全屏，请使用浏览器的全屏功能。');
+      }catch{toast('未能进入全屏，请使用浏览器的全屏功能（电脑通常为 F11）。');}
+    }
+    notesToggle.addEventListener('click',()=>toggleNotes());
+    fullscreenToggle.addEventListener('click',toggleFullscreen);
+    prev.addEventListener('click',()=>showSlide(current-1));
+    next.addEventListener('click',()=>showSlide(current+1));
+    document.addEventListener('fullscreenchange',()=>{
+      const full=Boolean(document.fullscreenElement);app.classList.toggle('fullscreen',full);
+      fullscreenToggle.innerHTML=full?'退出全屏<span class="shortcut">F</span>':'全屏<span class="shortcut">F</span>';
+      fullscreenToggle.title=full?'退出全屏（F / Esc）':'切换全屏（F）';
+    });
+    document.addEventListener('keydown',event=>{
+      if(event.altKey||event.ctrlKey||event.metaKey||event.isComposing)return;
+      if(event.target.closest('input,textarea,select,[contenteditable="true"]'))return;
+      const isButton=event.target.closest('button');
+      if(event.key==='Escape'){if(!notes.hidden){toggleNotes(false);notesToggle.focus();}return;}
+      if(event.key.toLowerCase()==='n'){event.preventDefault();toggleNotes();return;}
+      if(event.key.toLowerCase()==='f'){event.preventDefault();toggleFullscreen();return;}
+      if((event.key===' '||event.key==='Enter')&&isButton)return;
+      if(['ArrowRight','ArrowDown','PageDown',' '].includes(event.key)){event.preventDefault();showSlide(current+1);}
+      else if(['ArrowLeft','ArrowUp','PageUp','Backspace'].includes(event.key)){event.preventDefault();showSlide(current-1);}
+      else if(event.key==='Home'){event.preventDefault();showSlide(0);}
+      else if(event.key==='End'){event.preventDefault();showSlide(slides.length-1);}
+    });
+    let touchStart=null;
+    document.getElementById('deck').addEventListener('touchstart',event=>{if(event.touches.length===1)touchStart={x:event.touches[0].clientX,y:event.touches[0].clientY};else touchStart=null;},{passive:true});
+    document.getElementById('deck').addEventListener('touchend',event=>{if(!touchStart)return;const t=event.changedTouches[0],dx=t.clientX-touchStart.x,dy=t.clientY-touchStart.y;if(Math.abs(dx)>65&&Math.abs(dx)>Math.abs(dy)*1.5)showSlide(current+(dx<0?1:-1));touchStart=null;},{passive:true});
+    document.getElementById('deck').addEventListener('touchcancel',()=>{touchStart=null;},{passive:true});
+    window.addEventListener('hashchange',()=>showSlide(readHash(),false));
+    showSlide(readHash(),false);
+  </script>
+</body>
+</html>
